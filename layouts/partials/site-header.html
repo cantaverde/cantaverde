@@ -1,0 +1,21 @@
+<header>
+  <h1>{{ .Site.Title }}</h1>
+  <h2>{{ .Params.Title }}</h2>
+</header>
+{{ partial "site-navigation.html" .}}
+<div class="left">
+
+  {{ if .IsTranslated }}
+  <div class="translations">
+  <h4>{{ i18n "translations" }}</h4>
+  <ul>
+      {{ range .Translations }}
+      <li>
+          <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+      </li>
+      {{ end}}
+  </ul>
+  </div>
+  {{ end }}
+
+</div>

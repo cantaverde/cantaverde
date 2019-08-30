@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <article>
+    <main>
+      {{- .Content -}}
+    </main>
+    <section>
+      {{ $pages := .Site.RegularPages }}
+      {{ range .Site.Home.Translations }}
+      {{   $pages = $pages | lang.Merge .Site.RegularPages }}
+      {{ end }}
+      {{ $paginator := .Paginate $pages }}
+      {{ range $paginator.Pages }}
+      {{ partial "summary.html" . }}
+      {{ end }}
+    </section>
+    {{- template "_internal/pagination.html" . -}}
+  </article>
+{{ end }}

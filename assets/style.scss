@@ -1,0 +1,201 @@
+@import "fonts";
+@import url("fonts/ComputerModern/Serif/cmun-serif.css");
+@import url("fonts/ComputerModern/Serif Slanted/cmun-serif-slanted.css");
+@import url("fonts/ComputerModern/Typewriter Light/cmun-typewriter-light.css");
+
+html {
+  font-family: "Computer Modern Serif", "Lora", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+  font-size: 13pt;
+  /*
+  letter-spacing: -0.02rem;
+  line-height: 1.5;
+  */
+}
+
+blockquote {
+  font-family: "Computer Modern Serif Slanted";
+}
+
+xmp, pre, plaintext, tt, code, kbd, samp {
+  font-family: "Computer Modern Typewriter Light";
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 2px 2px 3px rgba(135, 145, 135, 0.65);
+  color: #111111;
+  a {
+    text-decoration: none;
+  }
+}
+a[href] {
+  color: #125aa7;
+  &:hover {
+    text-decoration: underline;
+    color: black;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > nav li {
+  font-size: 0.8em;
+  border-right: 1px solid #dddddd;
+  &:last-child {
+    border-right: none;
+  }
+  a {
+    font-weight: bold;
+    color: #125aa7;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+  }
+}
+
+body > header {
+  margin: 0;
+  color: #125aa7;
+  border-bottom: 2px solid #125aa7;
+
+  h1, h2 {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+
+  h1:after {
+    content: " - ";
+  }
+}
+
+body {
+  & > .left {
+    grid-area: left;
+    font-size: 0.7em;
+    ul {
+      padding-left: 0;
+      & > li {
+        margin-left: 0;
+      }
+    }
+  }
+  & > header {
+    grid-area: header;
+  }
+  & > nav {
+    grid-area: nav;
+  }
+  & > main {
+    grid-area: content;
+    padding: 1em 1em 0.2em 1em;
+    min-height: 30em;
+  }
+  & > footer {
+    grid-area: footer;
+  }
+
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 128px 0.5em auto;
+  grid-template-areas:
+    "left . header"
+    "left . nav"
+    "left . content"
+    "footer footer footer";
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "left"
+      "footer";
+  }
+}
+
+div.article.summary {
+  p.meta {
+    font-style: italic;
+    font-family: "Computer Modern Serif Slanted";
+  }
+}
+/*
+div.article.summary {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 5em auto;
+  grid-template-areas:
+    "date title"
+    "date summary";
+
+  h1 {
+    grid-area: title;
+  }
+
+  span.meta.date {
+    grid-area: date;
+    color: transparent;
+    display: grid;
+    grid-template-rows: 5em auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "day day"
+      "month year";
+    span.day, span.month, span.year {
+      color: black;
+    }
+    span.day {
+      grid-area: day;
+    }
+    span.month {
+      grid-area: month;
+    }
+    span.year {
+      grid-area: year;
+    }
+  }
+
+  & > div.summary {
+    grid-area: summary;
+  }
+}
+*/
+
+nav {
+  ul, ol {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    & > a {
+      padding: 0.5em;
+      display: inline-block;
+    }
+  }
+}
+
+.dialog:not(:target) {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+}

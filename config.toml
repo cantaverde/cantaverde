@@ -1,0 +1,14 @@
+baseURL = "http://cantaverde.mildred.fr/"
+title = "Canta Verde"
+
+DefaultContentLanguage = "fr"
+
+[languages]
+  [languages.fr]
+    title = "Canta Verde"
+    languageName = "Français"
+    weight = 1
+
+    [languages.fr.blackfriday]
+      angledQuotes = true
+
