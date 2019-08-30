@@ -77,6 +77,11 @@ body > header {
   h1:after {
     content: " - ";
   }
+
+  height: 500px;
+  background:
+    url("/images/black-and-white-blur-document-164821-scaled.jpg") top center no-repeat
+    black;
 }
 
 body {
@@ -110,7 +115,7 @@ body {
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 128px 0.5em auto;
   grid-template-areas:
-    "left . header"
+    "header header header"
     "left . nav"
     "left . content"
     "footer footer footer";
