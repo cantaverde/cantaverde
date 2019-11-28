@@ -1,11 +1,10 @@
-baseURL = "http://cantaverde.mildred.fr/"
-title = "Canta Verde"
+baseURL = "http://cantaverde.github.io/"
+title = "Chorale Canta Verde"
 
 DefaultContentLanguage = "fr"
 
 [languages]
   [languages.fr]
-    title = "Canta Verde"
     languageName = "Français"
     weight = 1
 

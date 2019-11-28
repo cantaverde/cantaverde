@@ -20,9 +20,10 @@ xmp, pre, plaintext, tt, code, kbd, samp {
   font-family: "Computer Modern Typewriter Light";
 }
 
-p {
+p, hr {
   text-align: justify;
   margin: 0 0 10px;
+  max-width: 50em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,6 +45,8 @@ a[href] {
 body {
   margin: 0;
   padding: 0;
+
+  background-color: lighten(lightgreen, 21%);
 }
 
 body > nav li {
@@ -68,17 +71,30 @@ body > header {
   color: #125aa7;
   border-bottom: 2px solid #125aa7;
 
+  text-align: center;
+  color: lightgreen;
+
   h1, h2 {
     padding: 0;
     margin: 0;
-    display: inline;
+    //display: inline;
+    color: inherit;
   }
 
-  h1:after {
-    content: " - ";
+  h1 {
+    font-size: 3em;
   }
 
-  height: 500px;
+  h2 {
+    font-size: 2em;
+  }
+
+  //h1:after {
+  //  content: " - ";
+  //}
+
+  padding-top: 200px;
+  height: 300px;
   background:
     url("/images/black-and-white-blur-document-164821-scaled.jpg") top center no-repeat
     black;
@@ -203,4 +219,23 @@ nav {
 
 textarea {
   width: 100%;
+}
+
+img.center, iframe.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+hr.dots {
+  border: none;
+  &:after {
+    text-align: center;
+    content: "꘏";
+    font-size: 2em;
+    display: block;
+    color: black;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
