@@ -17,4 +17,4 @@ git commit -m "$msg"
 # Push source and build repos.
 git remote -v
 git branch
-git push origin +gh-pages
+git push origin +gh-pages:master
