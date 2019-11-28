@@ -2,7 +2,7 @@
 layout: single
 ---
 
-Jeune chorale mixte et dynamique, créée en octobre 2018 avec un répertoire de musique sacrée et lyrique, nous explorons l'univers de Mozart, Vivaldi, ... au travers d'un travail sérieux qui reste cependant toujours dans la détente et la bonne humeur.
+Jeune chorale dynamique, créée en octobre 2018 avec un répertoire de musique sacrée et lyrique, nous explorons l'univers de Mozart, Vivaldi, ... au travers d'un travail sérieux qui reste cependant toujours dans la détente et la bonne humeur.
 
 Notre chef de chœur, Isabelle Tricot, a fondé cette chorale depuis son arrivée dans la région en 2018. Auparavant, elle dirigeait une chorale en normandie. Sa formation de chef de chœur lui permet de faire progresser ses choristes par un travail approfondi.
 
