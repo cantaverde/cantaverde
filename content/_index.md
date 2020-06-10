@@ -12,17 +12,8 @@ Si vous aimez chanter, même si vous ne conaissez pas le solfège, venez nous re
 
 ## Prochaines dates
 
-### Chants de Noël
-
-Nous préparons un concert de chants de Noël.
-
-* 15 décembre à l'église de Villette
-
-* 23 décembre à la Matinière
-
-### Concert de printemps
-
-Entre le mois d'avril et de mai, nous prévoyons plusieurs dates où nous chanterons des œuvres de Gounod, Saint-Saëns, Vivaldi, Mozart, etc.
+En raison du confinement, nous n'avons pas pu produire nos concerts. Nous vous
+tiendrons informés lorsque nous en saurons plus.
 
 <hr class="dots" />
 
